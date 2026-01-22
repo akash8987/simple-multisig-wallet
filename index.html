@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MultiSig Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Signature Wallet</h1>
+        <p>Contract Balance: <span id="balance">0</span> ETH</p>
+        <button id="connectBtn">Connect Wallet</button>
+
+        <div class="card">
+            <h3>Submit Transaction</h3>
+            <input type="text" id="toAddress" placeholder="Recipient Address (0x...)">
+            <input type="number" id="amount" placeholder="Amount in ETH">
+            <button id="submitBtn">Submit Proposal</button>
+        </div>
+
+        <div class="card">
+            <h3>Pending Transactions</h3>
+            <div id="txList">
+                </div>
+        </div>
+        
+        <div id="status"></div>
+    </div>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
